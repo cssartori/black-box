@@ -36,8 +36,6 @@ Because this game was implemented in a older version of the Intel's set of instr
 
 Z:\> mount c dir_bb
 ```
-     For example, my path in Linux is: ~/bba/
-
 4. Now, go to the new C:/ directory in DOSBox by typing
 ```
 #!shell
