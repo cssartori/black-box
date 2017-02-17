@@ -36,7 +36,7 @@ Because this game was implemented in a older version of the Intel's set of instr
 
 Z:\> mount c dir_bb
 ```
-For example, my path in Linux is: ~/bba/
+     For example, my path in Linux is: ~/bba/
 
 4. Now, go to the new C:/ directory in DOSBox by typing
 ```
@@ -44,28 +44,24 @@ For example, my path in Linux is: ~/bba/
 
 Z:\> C:
 ```
-
 5. Once in the mounted C:\, we will compile the source code. Run the compiler TASM to compile bba_final:
 ```
 #!shell
 
 C:\> TASM.exe bba_final.asm
 ```
-
 6. A file bba_final.OBJ will be generated, and like when compiling C files, one should link it, by running TLINK
 ```
 #!shell
 
 C:\> TLINK.exe bba_final.OBJ
 ```
-
 7. Finally, a file bba_final.exe should be created in the directory. Now one can run it by
 ```
 #!shell
 
 C:\> bba_final.exe
 ```
-
 8. Enjoy :)
 
 ## **About** ##
