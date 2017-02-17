@@ -70,4 +70,7 @@ C:\> bba_final.exe
 
 ## **About** ##
 
+The code contains more than 1800 lines of code (in a single file, of course). Most of the variables and comments are in Portuguese, and I'm not sure I can change it to English given the amount of time it would take. However, the game's interface I managed to translate, so playing will be ok.
+
+
 Done for the "INF01108 - Computers' Architecture and Organization I", 2012, at UFRGS.

@@ -1,5 +1,5 @@
-;Trabalho com o Intel		-		INF01108 - Arquitetura e Organização de Computadores I
-;Black Box (12/2012)
+;Work with the Intel 8086		-		INF01108 - Computers' Architecture and Organization I
+;Black Box: Assembled (2012/1)
 
 
 assume cs:codigo,ds:dados,es:dados,ss:pilha
@@ -14,26 +14,26 @@ cif      EQU    024H
 	
 dados	segment
 
-Cenario_0  db	'Caixa Preta '                              , CR,LF,CR,LF ;'$'
+Cenario_0  db	'Black Box: Assembled  |  by Carlo Sartori'                              , CR,LF,CR,LF ;'$'
 
 Cenario_2  db   '         [  ] [  ] [  ] [  ] [  ] [  ] [  ] [  ]'                                           , CR,LF;'$'
-Cenario_3  db   '           0    1    2    3    4    5    6    7          Tentativas:  [   ]'                , CR,LF;,'$'
+Cenario_3  db   '           0    1    2    3    4    5    6    7           Tries:   [   ]'                , CR,LF;,'$'
 Cenario_4  db	'        *----*----*----*----*----*----*----*----*'		                             , CR, LF;, '$'
-Cenario_5  db   ' [  ] 0 |    |    |    |    |    |    |    |    | 0 [  ]  Comando: [   ]'  ,CR, LF;,        '$'
-Cenario_6  db   '        *----*----*----*----*----*----*----*----*           R: emite raio'                    , CR,LF;,'$'
-Cenario_7  db   ' [  ] 1 |    |    |    |    |    |    |    |    | 1 [  ]    P: posiciona atomo', CR,LF;,'$'
-Cenario_8  db   '        *----*----*----*----*----*----*----*----*           D: remove atomo', CR,LF;,'$'
-Cenario_9  db   ' [  ] 2 |    |    |    |    |    |    |    |    | 2 [  ]    E: encerra testes', CR,LF;,'$'
-Cenario_10 db   '        *----*----*----*----*----*----*----*----*            (exibe resultados)', CR,LF;,'$'
-Cenario_11 db   ' [  ] 3 |    |    |    |    |    |    |    |    | 3 [  ]    N: novo jogo', CR,LF;,'$'
-Cenario_12 db   '        *----*----*----*----*----*----*----*----*           F: fim do programa', CR,LF;,'$'
+Cenario_5  db   ' [  ] 0 |    |    |    |    |    |    |    |    | 0 [  ]  Command: [   ]'  ,CR, LF;,        '$'
+Cenario_6  db   '        *----*----*----*----*----*----*----*----*           R: Shoot Ray'                    , CR,LF;,'$'
+Cenario_7  db   ' [  ] 1 |    |    |    |    |    |    |    |    | 1 [  ]    P: Set Atom', CR,LF;,'$'
+Cenario_8  db   '        *----*----*----*----*----*----*----*----*           D: Remove Atom', CR,LF;,'$'
+Cenario_9  db   ' [  ] 2 |    |    |    |    |    |    |    |    | 2 [  ]    E: End Game', CR,LF;,'$'
+Cenario_10 db   '        *----*----*----*----*----*----*----*----*            (show results)', CR,LF;,'$'
+Cenario_11 db   ' [  ] 3 |    |    |    |    |    |    |    |    | 3 [  ]    N: New Game', CR,LF;,'$'
+Cenario_12 db   '        *----*----*----*----*----*----*----*----*           F: Finish Program', CR,LF;,'$'
 Cenario_13 db   ' [  ] 4 |    |    |    |    |    |    |    |    | 4 [  ]          ', CR,LF;,'$'
-Cenario_14 db   '        *----*----*----*----*----*----*----*----*         Coordenadas:', CR,LF;,'$'
-Cenario_15 db   ' [  ] 5 |    |    |    |    |    |    |    |    | 5 [  ]   Linha       [   ]', CR,LF;,'$'
-Cenario_16 db   '        *----*----*----*----*----*----*----*----*          Coluna      [   ]', CR,LF;,'$'   		
-Cenario_17 db   ' [  ] 6 |    |    |    |    |    |    |    |    | 6 [  ]   Direcao     [   ]', CR,LF;,'$'
+Cenario_14 db   '        *----*----*----*----*----*----*----*----*         Coordinates:', CR,LF;,'$'
+Cenario_15 db   ' [  ] 5 |    |    |    |    |    |    |    |    | 5 [  ]    Row        [   ]', CR,LF;,'$'
+Cenario_16 db   '        *----*----*----*----*----*----*----*----*           Column     [   ]', CR,LF;,'$'   		
+Cenario_17 db   ' [  ] 6 |    |    |    |    |    |    |    |    | 6 [  ]    Direction  [   ]', CR,LF;,'$'
 Cenario_18 db   '        *----*----*----*----*----*----*----*----*   '           , CR,LF;,'$'   
-Cenario_19 db   ' [  ] 7 |    |    |    |    |    |    |    |    | 7 [  ]  Nome do arquivo: ', CR,LF;,'$'
+Cenario_19 db   ' [  ] 7 |    |    |    |    |    |    |    |    | 7 [  ]  Scenario File: ', CR,LF;,'$'
 Cenario_20 db   '        *----*----*----*----*----*----*----*----*                          ' , CR,LF;,'$' 
 Cenario_21 db   '           0    1    2    3    4    5    6    7 ', CR,LF;,'$'
 Cenario_22 db   '         [  ] [  ] [  ] [  ] [  ] [  ] [  ] [  ] '  , CR,LF,CR,LF,'$'
